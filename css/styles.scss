@@ -15,6 +15,8 @@ body {
 	background: $bg-color;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 800;
+	color: $font-color;
+	text-align: center;
 }
 
 .container {
@@ -98,25 +100,35 @@ nav a:hover::before {
 }
 
 h1, h3 {
-	color: $font-color;
 	font-size: 48px;
-	text-align: center;
 }
 
 h3 {
-	color: $font-color;
 	font-size: 36px;
-	text-align: center;
 }
 
 h5 {
-	color: $font-color;
 	font-size: 24px;
-	text-align: center;
 }
 
 footer {
   background-color: $basketball-color;
   padding: 20px;
   text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+	margin-left : auto;
+  margin-right : auto;
+	margin-bottom: 50px;
+}
+
+.textleft {
+	text-align: left;
+}
+
+td, th {
+  padding: 5px;
 }
