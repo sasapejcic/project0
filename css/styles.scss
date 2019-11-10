@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+$basketball-color: #fa8320;
+$bg-color: #032535;
+$bg-header-color: $basketball-color;
+$menu-link-color: #61234e;
+$menu-link-color-hover: #000;
+$menu-font-size: 20px;
+
+
+body {
+	margin: 0;
+	background: $bg-color;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background-color: $bg-header-color;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0
+}
+
+nav {
+  float: right;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 50px;
+
+  position: relative;
+}
+
+nav a {
+  color: $menu-link-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: $menu-font-size;
+}
+
+nav a:hover {
+  color: $menu-link-color-hover;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: $menu-link-color;
+
+  position:absolute;
+  top: 40px;
+  width: 0%;
+
+  transition: all ease-in-out 1000ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
