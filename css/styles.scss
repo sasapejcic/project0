@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
+$font-color: #ebfffb;
 $basketball-color: #fa8320;
-$bg-color: #032535;
-$bg-header-color: $basketball-color;
 $menu-link-color: #61234e;
+$bg-color: #032535;
+
+$bg-header-color: $basketball-color;
 $menu-link-color-hover: #000;
 $menu-font-size: 20px;
 
@@ -35,30 +37,42 @@ header::after {
   padding: 10px 0
 }
 
+@media only screen and (min-width: 992px) {
+  nav {
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  nav {
+    display: none;
+  }
+}
+
 nav {
-  float: right;
+	ul {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	}
 }
 
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+nav {
+	li {
+	  display: inline-block;
+	  margin-left: 70px;
+	  padding-top: 50px;
+  	position: relative;
+	}
 }
 
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 50px;
-
-  position: relative;
-}
-
-nav a {
-  color: $menu-link-color;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: $menu-font-size;
+nav {
+	a {
+	  color: $menu-link-color;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  font-size: $menu-font-size;
+	}
 }
 
 nav a:hover {
@@ -81,4 +95,22 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
+}
+
+h1, h3 {
+	color: $font-color;
+	font-size: 48px;
+	text-align: center;
+}
+
+h3 {
+	color: $font-color;
+	font-size: 36px;
+	text-align: center;
+}
+
+h5 {
+	color: $font-color;
+	font-size: 24px;
+	text-align: center;
 }
