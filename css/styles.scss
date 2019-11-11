@@ -132,3 +132,12 @@ table {
 td, th {
   padding: 5px;
 }
+
+.card {
+  background-color: $bg-color;
+	border-color: $font-color;
+	margin-bottom: 12px;
+	p {
+		font-size: 48px;
+	}
+}

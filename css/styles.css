@@ -112,4 +112,13 @@ td, th {
   padding: 5px;
 }
 
+.card {
+  background-color: #032535;
+  border-color: #ebfffb;
+  margin-bottom: 12px;
+}
+.card p {
+  font-size: 48px;
+}
+
 /*# sourceMappingURL=styles.css.map */
