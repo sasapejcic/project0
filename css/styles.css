@@ -121,4 +121,20 @@ td, th {
   font-size: 48px;
 }
 
+#highlight {
+  color: #88cc00;
+}
+
+.hdr3, .season, .day {
+  font-size: 36px;
+}
+
+.day {
+  color: #99ccff;
+}
+
+.season {
+  color: #66b3ff;
+}
+
 /*# sourceMappingURL=styles.css.map */
